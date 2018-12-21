@@ -8,15 +8,15 @@ permalink: /about/
 generating dynamics and waveforms of black holes and neutron star
 binaries in general relativity. Main feats
 
- * Point-mass conservative dynamics Pade'-resummed and informed by numerical relativity (NR) simulations of binary black holes at (effective) fifth post-Newtonian (PN) order
- * Resummed [DIN](http://inspirehep.net/record/802497) waveform 
- * Spin-orbit and spin-spin effects blended together by making use of the concept of centrifugal EOB radius
+ * Pade'-resummed point-mass conservative dynamics and informed by numerical relativity (NR) simulations of binary black holes at (effective) fifth post-Newtonian (PN) order
+ * Resummed [Damour-Iyer-Nagar](http://inspirehep.net/record/802497) waveform 
+ * Spin-orbit and spin-spin effects blended together by the centrifugal EOB radius
  * NR-based phenomenological description of the postmerger waveform for binary black holes
- * Tidal describing gravitoelectric and gravitomagnetic effects obtained with blending and resummation of PN and gravitational self-force (GSF) information
+ * Tidal gravitoelectric and gravitomagnetic effects obtained with blending and resummation of PN and gravitational self-force (GSF) information
  * Equation of state - dependent, quadratic-in-spin, self-spin effects at next-to-next-to-leading PN order
  * Multipolar waveform and fluxes 
  
-You can find a technical description of the model [here](https://inspirehep.net/record/1676430).
+You can find a technical description of the model [here](https://inspirehep.net/record/1676430). As for the name, *T* stands for tides, *Resum* indicate the use of analytical resummation techniques, and *S* for spins. 
 
 ## Can I try?
 
@@ -28,9 +28,7 @@ Start by cloning the code repo
 git clone git@bitbucket.org:eob_ihes/teobresums.git
 ```
 
-and taking a look at the [Wiki](https://bitbucket.org/eob_ihes/teobresums/wiki/Home) there.
-
-There are examples and parfiles to start with. You want to use the code version tagged as `v1.0`.
+and taking a look at the [Wiki](https://bitbucket.org/eob_ihes/teobresums/wiki/Home) there. There are examples and parfiles to start with. You want to use the code version tagged as `v1.0`.
 
 Quick start with the binary neutron star event [GW170817](https://www.gw-openscience.org/events/GW170817/):
 
