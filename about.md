@@ -36,14 +36,14 @@ Quick start with the binary neutron star event [GW170817](https://www.gw-opensci
 $ cd /PATH/TO/teobresums/C
 $ export TEOBRESUMS=$(pwd) # you might want to set this env var in your .bashrc
 $ make -f Makefile.TEOBResumS # you can also open the Makefile and set some options
-$ ./TEOBResumS.x GW170817.par 
-$ python ../Python/PlotWave.py -i GW170817/waveform.txt -m "ari" -l "no" # show amplitude, real, imag part and do not show legend
+$ ./TEOBResumS.x GW170817.par # this run should take ~ 2 s , runtime from initial frequencies <~ 20Hz is dominated by output of large data file
+$ python ../Python/PlotWave.py -i GW170817/waveform_interp.txt -m "ai" -l "no" # show amplitude, real, imag part and do not show legend
 ```
 
 The parfile can be found [here]({{site.url}}/assets/parfiles/GW170817.par).
 That gives you the waveform sampled at 4096 Hz (Note the sampling is the reason you see so many "wiggles"):
 
-![GW170817-TEOBResumS]({{site.url}}/assets/events/GW170817/GW170817_waveform.png){:class="img-responsive"}
+![GW170817-TEOBResumS]({{site.url}}/assets/events/GW170817/GW170817_waveform_interp.png){:class="img-responsive"}
 
 ## References
 
