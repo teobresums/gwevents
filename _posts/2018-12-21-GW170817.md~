@@ -1,0 +1,14 @@
+---
+layout: page
+title: GW170817
+permalink: /GW170817/
+
+---
+
+The O2 binary neutron star event [GW170817](https://www.gw-openscience.org/events/GW170817/):
+
+![GW170817-TEOBResumS]({{ site.url }}/assets/events/GW170817/GW170817_waveform.png){:class="img-responsive"}
+*waveform sampled at 4096 Hz*
+
+
+The parfile to generate this waveform can be found [here]({{ site.url }}/assets/events/GW170817/GW170817.par).
