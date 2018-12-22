@@ -24,13 +24,15 @@ low-frequency quasi-circular inspiral regime all the way to merger
 
 `TEOBResumS` parfiles and waveforms are given in the table below. A summary of the GW transients of compact binary mergers observed by LIGO and Virgo during the first (O1) and second (O2) observing runs is given in the [GWTC-1](https://inspirehep.net/record/1706018) paper.
 
-> > **Disclaim**: The waveforms below do not correspond to any "best match" of the data. They are computed with source parameters values within the 90% confidence region for illustration purposes. Some uncertain parameters are even chosen arbitrarily. 
+> **Disclaim**: The waveforms below do not correspond to any "best match" of the data. They are computed with source parameters values within the 90% confidence region for illustration purposes. Some uncertain parameters are even chosen arbitrarily. 
 
 
-| Name | Masses | Spins | Distance | Lambda's | Data |
+| Name | Masses | Spins | Distance | f0 | Lambda's | Data |
 |---|---|---|---|
-{% for e in site.events %}| {{ e.name }} | {{e.masses}} | {{e.spins}} | {{e.distance}} | {{e.lambdas}} | [![Download]({{site.baseurl}}/assets/images/download-from-cloud.png){:height="20px" class="img-responsive"}]({{site.baseurl}}/assets/events/{{ e.name }}/{{ e.name }}.tgz) |
+{% for e in site.events %}| {{ e.name }} | {{e.masses}} | {{e.spins}} | {{e.distance}} | {{e.f0}} | {{e.lambdas}} | [![Download]({{site.baseurl}}/assets/images/download-from-cloud.png){:height="20px" class="img-responsive"}]({{site.baseurl}}/assets/events/{{ e.name }}/{{ e.name }}.tgz) |
 {% endfor %}
 
-**Table**: Masses are given in Solar masses; spin values are in geometric units and mass-rescaled (Sz/M^2); distance is in Mpc. Lambda is the quadrupolar tidal polarizability of each star. All the waveforms are sampled at 4096 Hz; time units are given in seconds. 
+**Table**: Masses are given in Solar masses; spin values are in geometric units and mass-rescaled (Sz/M^2); distance is in Mpc; the initial GW frequency is in Hz. Lambda is the quadrupolar tidal polarizability of each star. All the waveforms are sampled at 4096 Hz; time units are given in seconds. 
 
+
+> **Note**: All this is experimental and under construction! Help us sending feedback on the `TEOBResumS` code/repo, the website and by [computing/adding events](/howto/) yourself!

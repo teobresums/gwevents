@@ -16,8 +16,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Gravitational-wave TEOBResumS events  
-#email: your-email@example.com
+title: Gravitational-wave TEOBResumS events
+email: sebastiano.bernuzzi@uni-jena.de
 description: >- # this means to ignore newlines until "baseurl:"
   Effective-one-body waveforms for the LIGO-Virgo GW events.
 baseurl: "/gwevents" # the subpath of your site, e.g. /blog
@@ -43,7 +43,6 @@ collections:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - events.md # only kept as example of extra page
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
