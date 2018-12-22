@@ -45,7 +45,7 @@ $ cd /PATH/TO/teobresums/C
 $ export TEOBRESUMS=$(pwd) # you might want to set this env var in your .bashrc
 $ make -f Makefile.TEOBResumS # you can also open the Makefile and set some options
 $ ./TEOBResumS.x GW170817.par # this run should take ~ 2 s , runtime from initial frequencies <~ 20Hz is dominated by output of large data file
-$ python ../Python/PlotWave.py -i GW170817/waveform_interp.txt -m "ai" --no-legend # show amplitude, real, imag part and do not show legend
+$ python ../Python/PlotWave.py -i GW170817/waveform_interp.txt -m "ai" --no-legend # show amplitude, imag part and do not show legend
 ```
 
 That gives you the GW170817 waveform sampled at 4096 Hz:
