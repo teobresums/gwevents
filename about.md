@@ -30,18 +30,25 @@ git clone git@bitbucket.org:eob_ihes/teobresums.git
 
 and taking a look at the [Wiki](https://bitbucket.org/eob_ihes/teobresums/wiki/Home) there. There are examples and parfiles to start with. You want to use the code version tagged as `v1.0`.
 
-Quick start with the binary neutron star event [GW170817](https://www.gw-openscience.org/events/GW170817/):
+For a quick start with the binary neutron star event [GW170817](https://www.gw-openscience.org/events/GW170817/), you simply need to 
+
+ 1. Clone the code
+ 2. Compile the code (You need: the [`GCC`](https://gcc.gnu.org/) compiler and standard libs, including [`GSL`](https://www.gnu.org/software/gsl/doc/html/index.html), and [`Make`](https://www.gnu.org/software/make/))
+ 3. Run it with [this parfiles]({{site.baseurl}}/assets/events/GW170817/GW170817.par)
+ 4. Plot the result using e.g. [this]({{site.baseurl}}/assets/python/PlotWave.py) `python` script (that you can find also in the repo)
+
+Get your waveform in four commands:
 
 ```
+$ git clone git@bitbucket.org:eob_ihes/teobresums.git
 $ cd /PATH/TO/teobresums/C
 $ export TEOBRESUMS=$(pwd) # you might want to set this env var in your .bashrc
 $ make -f Makefile.TEOBResumS # you can also open the Makefile and set some options
 $ ./TEOBResumS.x GW170817.par # this run should take ~ 2 s , runtime from initial frequencies <~ 20Hz is dominated by output of large data file
-$ python ../Python/PlotWave.py -i GW170817/waveform_interp.txt -m "ai" -l "no" # show amplitude, real, imag part and do not show legend
+$ python ../Python/PlotWave.py -i GW170817/waveform_interp.txt -m "ai" --no-legend # show amplitude, real, imag part and do not show legend
 ```
 
-The parfile can be found [here]({{site.baseurl}}/assets/events/GW170817/GW170817.par).
-That gives you the waveform sampled at 4096 Hz (Note the sampling is the reason you see so many "wiggles"):
+That gives you the GW170817 waveform sampled at 4096 Hz:
 
 ![Fig:GW170817-TEOBResumS]({{site.baseurl}}/assets/events/GW170817/GW170817_waveform_interp.png){:class="img-responsive"}
 
