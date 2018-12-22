@@ -22,6 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Effective-one-body waveforms for the LIGO-Virgo GW events.
 baseurl: "/gwevents" # the subpath of your site, e.g. /blog
 url: "http://teobresums.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_repo: https://github.com/teobresums/gwevents/
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
