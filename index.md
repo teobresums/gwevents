@@ -18,13 +18,13 @@ It describes motion and radiation of the coalescence process, from the
 low-frequency quasi-circular inspiral regime all the way to merger
 (and ringdown, for black hole binaries). 
 
-![Fig:GW140915-TEOBResumS-and-signal](TODO){:class="img-responsive"}
+[![Fig:GW140915-TEOBResumS-and-signal]({{site.baseurl}}/assets/images/Fig16-grqc-1806.01772.png){:class="img-responsive"}](https://arxiv.org/abs/1806.01772)
 
 ## Waveforms
 
 `TEOBResumS` parfiles and waveforms are given in the table below. A summary of the GW transients of compact binary mergers observed by LIGO and Virgo during the first (O1) and second (O2) observing runs is given in the [GWTC-1](https://inspirehep.net/record/1706018) paper.
 
-> > **Disclaim**: The waveforms below do not correspond to any "best" match of the data. They are computed with source parameters values within the 90% confidence region for illustration purposes. Some uncertain parameters are even chosen arbitrarily. 
+> > **Disclaim**: The waveforms below do not correspond to any "best match" of the data. They are computed with source parameters values within the 90% confidence region for illustration purposes. Some uncertain parameters are even chosen arbitrarily. 
 
 
 | Name | Masses | Spins | Distance | Lambda's | Data |
