@@ -27,10 +27,10 @@ low-frequency quasi-circular inspiral regime all the way to merger
 > > **Disclaim**: The waveforms below do not correspond to any "best" match of the data. They are computed with source parameters values within the 90% confidence region for illustration purposes. Some uncertain parameters are even chosen arbitrarily. 
 
 
-| Name | Masses [Mo] | Spins [Sz/M^2] | Distance [Mpc] | Lambda's | Data |
+| Name | Masses | Spins | Distance | Lambda's | Data |
 |---|---|---|---|
-{% for e in site.events %}| {{ e.name }} | {{e.masses}} | {{e.spins}} | {{e.distance}} | {{e.lambdas}} | [![Download]({{site.baseurl}}/assets/images/download-from-cloud.png){:height="20px" class="img-responsive"}]({{site.baseurl}}/assets/events/{{ e.name }}/) |
+{% for e in site.events %}| {{ e.name }} | {{e.masses}} | {{e.spins}} | {{e.distance}} | {{e.lambdas}} | [![Download]({{site.baseurl}}/assets/images/download-from-cloud.png){:height="20px" class="img-responsive"}]({{site.baseurl}}/assets/events/{{ e.name }}/{{ e.name }}.tgz) |
 {% endfor %}
 
-Table: Masses are given in solar masses [Mo], spin values are dimensionless. All the waveforms are sampled at 4096 Hz; time units are given in seconds. Parameters Lambda is the quadrupolar tidal polarizability of each star.
+**Table**: Masses are given in Solar masses; spin values are in geometric units and mass-rescaled (Sz/M^2); distance is in Mpc. Lambda is the quadrupolar tidal polarizability of each star. All the waveforms are sampled at 4096 Hz; time units are given in seconds. 
 
