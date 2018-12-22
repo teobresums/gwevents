@@ -7,7 +7,7 @@ layout: home
 
 Welcome! Here you find gravitational waveforms (GWs) compatible with
 LIGO-Virgo events and computed the state-of-art effective-one-body
-model [`TEOBResumS`]({{site.url}}/about/). 
+model [`TEOBResumS`]({{site.baseurl}}/about/). 
 
 `TEOBResumS` solves the general relativistic two-body problem and
 generates dynamics and waveforms of colliding black holes and neutron
@@ -29,7 +29,7 @@ low-frequency quasi-circular inspiral regime all the way to merger
 
 | Name | Masses [Mo] | Spins [Sz/M^2] | Distance [Mpc] | Lambda's | Data |
 |---|---|---|---|
-{% for e in site.events %}| {{ e.name }} | {{e.masses}} | {{e.spins}} | {{e.distance}} | {{e.lambdas}} | [![Download]({{site.url}}/assets/images/download-from-cloud.png){:height="20px" class="img-responsive"}]({{site.url}}/assets/events/{{ e.name }}/) |
+{% for e in site.events %}| {{ e.name }} | {{e.masses}} | {{e.spins}} | {{e.distance}} | {{e.lambdas}} | [![Download]({{site.baseurl}}/assets/images/download-from-cloud.png){:height="20px" class="img-responsive"}]({{site.baseurl}}/assets/events/{{ e.name }}/) |
 {% endfor %}
 
 Table: Masses are given in solar masses [Mo], spin values are dimensionless. All the waveforms are sampled at 4096 Hz; time units are given in seconds. Parameters Lambda is the quadrupolar tidal polarizability of each star.
