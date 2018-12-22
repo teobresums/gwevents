@@ -30,6 +30,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+#  - jemoji
 
 # Collections
 collections:
@@ -41,8 +42,11 @@ collections:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - events.md # only kept as example of extra page
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+

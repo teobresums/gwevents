@@ -43,6 +43,7 @@ collections:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - events.md # only kept as example of extra page
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
