@@ -9,7 +9,7 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # For local dev, run with 
-# jekyll serve --config _config.yml,_config_dev.yml
+# jekyll serve --config _config.yml,_config_local.yml
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
