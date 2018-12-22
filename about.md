@@ -32,10 +32,10 @@ and taking a look at the [Wiki](https://bitbucket.org/eob_ihes/teobresums/wiki/H
 
 For a quick start with the binary neutron star event [GW170817](https://www.gw-openscience.org/events/GW170817/), you simply need to 
 
- 1. Clone the code
- 2. Compile the code (You need: the [`GCC`](https://gcc.gnu.org/) compiler and standard libs, including [`GSL`](https://www.gnu.org/software/gsl/doc/html/index.html), and [`Make`](https://www.gnu.org/software/make/))
- 3. Run it with [this parfiles]({{site.baseurl}}/assets/events/GW170817/GW170817.par)
- 4. Plot the result using e.g. [this]({{site.baseurl}}/assets/python/PlotWave.py) `python` script (that you can find also in the repo)
+ 1. Clone the repo
+ 2. Compile the code (with basic things: [`GCC`](https://gcc.gnu.org/) compiler and standard libs, including [`GSL`](https://www.gnu.org/software/gsl/doc/html/index.html), and [`Make`](https://www.gnu.org/software/make/))
+ 3. Run it with [this]({{site.baseurl}}/assets/events/GW170817/GW170817.par) parfile
+ 4. Plot the result using e.g. [this]({{site.baseurl}}/assets/python/PlotWave.py) `python` script (that you can also find in the repo)
 
 Get your waveform in four commands:
 
@@ -48,7 +48,7 @@ $ ./TEOBResumS.x GW170817.par # this run should take ~ 2 s , runtime from initia
 $ python ../Python/PlotWave.py -i GW170817/waveform_interp.txt -m "ai" --no-legend # show amplitude, imag part and do not show legend
 ```
 
-That gives you the GW170817 waveform sampled at 4096 Hz:
+That gives you the GW170817 waveform from 20 Hz to merger sampled at 4096 Hz:
 
 ![Fig:GW170817-TEOBResumS]({{site.baseurl}}/assets/events/GW170817/GW170817_waveform_interp.png){:class="img-responsive"}
 
