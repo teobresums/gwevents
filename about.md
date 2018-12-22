@@ -40,10 +40,10 @@ $ ./TEOBResumS.x GW170817.par # this run should take ~ 2 s , runtime from initia
 $ python ../Python/PlotWave.py -i GW170817/waveform_interp.txt -m "ai" -l "no" # show amplitude, real, imag part and do not show legend
 ```
 
-The parfile can be found [here]({{site.url}}/assets/GW170817/GW170817.par).
+The parfile can be found [here]({{site.baseurl}}/assets/events/GW170817/GW170817.par).
 That gives you the waveform sampled at 4096 Hz (Note the sampling is the reason you see so many "wiggles"):
 
-![Fig:GW170817-TEOBResumS]({{site.url}}/assets/events/GW170817/GW170817_waveform_interp.png){:class="img-responsive"}
+![Fig:GW170817-TEOBResumS]({{site.baseurl}}/assets/events/GW170817/GW170817_waveform_interp.png){:class="img-responsive"}
 
 ## References
 
