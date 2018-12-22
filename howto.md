@@ -21,10 +21,10 @@ and it will appear on this website.
 
 Here we give you some tips on what and how to push.
 We assume you are familiar with basic Linux `bash` commands and [`git`](https://git-scm.com/) (see also a [quick tutorial](https://gitlab.com/bernuzzi/gitandgo)).
-Fork our [GitHub repo](https://github.com/teobresums/gwevents/), clone your fork and work there.
+Fork our [`gwevents`](https://github.com/teobresums/gwevents/) repo, clone your fork and work there.
 When ready, make a pull request: we will merge as soon as we have some time to work on it :)
 
-To start, please, take a moment to study the repo structure. The website is created with [`jekyll`](https://jekyllrb.com/) but you do not need to learn that in detail; just follow the tutorial below.
+To start, please, take a moment to study the repo structure. The website is created with [`jekyll`](https://jekyllrb.com/) but you do not need to learn that in detail; just follow this tutorial.
 
 Lets say you have produce a `TEOBResumS` waveform corresponding to event `GWYYMMDD`.
 Make a tarball with the data interpolated at 4096 Hz (output file `waveform_interp.txt`), the parfile and a plot of the data:
@@ -34,7 +34,7 @@ $ tar zcvf GWYYMMDD.tgz waveform_interp.txt GWYYMMDD.par GWYYMMDD_waveform_inter
 $ ls -h GWYYMMDD.tgz # check how big is the tarball
 ```
 
-and be sure the tarball is smaller than, say 20M (but typical size should be 1-2M).
+and be sure the tarball is smaller than, say, 20M (but typical size should be 2M).
 
 Then, create a folder with the event's name in the `gwevents` repo and copy there the data:
 
@@ -59,10 +59,10 @@ Before `git` adding/pushing, would be better to check locally that you did not b
 $ bundle exec jekyll serve --config _config.yml,_config_local.yml
 ```
 
-and open `http://127.0.0.1:4000` with your browser, you should see the website with your additions.
-Note you need `jekyll` installed locally todo that; otherwise you will to check from `GitHub` pages.
+and open `http://127.0.0.1:4000` with your browser: you should see the website with your additions.
+Note you need `jekyll` installed locally todo that; otherwise you will to check later from `GitHub` pages.
 
-Finally add/push on branch `gh-pages`:
+Finally, you are ready to add/push on branch `gh-pages`:
 
 ```
 git push origin gh-pages
