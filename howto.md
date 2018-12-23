@@ -6,7 +6,7 @@ permalink: /howto/
 
 We did not add waveforms for all the events abserved so far.
 Your are welcome to add your favourite GW `TEOBResumS` event to this website.
-Be quick: there's a limited number of events!
+Be quick: there's a finite number of events!
 
 Steps:
 
@@ -26,7 +26,7 @@ When ready, make a pull request: we will merge as soon as we have some time to w
 
 To start, please, take a moment to study the repo structure. The website is created with [`jekyll`](https://jekyllrb.com/) but you do not need to learn that in detail; just follow this tutorial.
 
-Lets say you have produce a `TEOBResumS` waveform corresponding to event `GWYYMMDD`.
+Lets say you produced a `TEOBResumS` waveform corresponding to event `GWYYMMDD`.
 Make a tarball with the data interpolated at 4096 Hz (output file `waveform_interp.txt`), the parfile and a plot of the data:
 
 ```
@@ -36,7 +36,7 @@ $ ls -h GWYYMMDD.tgz # check how big is the tarball
 
 and be sure the tarball is smaller than, say, 20M (but typical size should be 2M).
 
-Then, create a folder with the event's name in the `gwevents` repo and copy there the data:
+To add your event, first create a folder with the event's name in the `gwevents` repo and copy there the data:
 
 ```
 $ mkdir PATH/TO/YOUR/REPO/gwevents/assets/events/GWYYMMDD
@@ -60,7 +60,7 @@ $ bundle exec jekyll serve --config _config.yml,_config_local.yml
 ```
 
 and open `http://127.0.0.1:4000` with your browser: you should see the website with your additions.
-Note you need `jekyll` installed locally todo that; otherwise you will to check later from `GitHub` pages.
+Note you need `jekyll` installed locally todo that; otherwise you will check later from `GitHub` pages.
 
 Finally, you are ready to add/push on branch `gh-pages`:
 

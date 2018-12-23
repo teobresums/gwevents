@@ -35,4 +35,4 @@ low-frequency quasi-circular inspiral regime all the way to merger
 **Table**: Masses are given in Solar masses; spin values are in geometric units and mass-rescaled (Sz/M^2); distance is in Mpc; the initial GW frequency is in Hz. Lambda is the quadrupolar tidal polarizability of each star. All the waveforms are sampled at 4096 Hz; time units are given in seconds. 
 
 
-> **Note**: All this is experimental and under construction! Help us sending feedback on the `TEOBResumS` code/repo, the website and by [computing/adding events](/howto/) yourself!
+> **Note**: All this is experimental and under construction! Help us sending feedback on the `TEOBResumS` code/repo, the website and by [computing/adding events]({{site.baseurl}}/howto/) yourself!
